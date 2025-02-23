@@ -215,3 +215,7 @@ input[type="checkbox"]:checked + label::before {
     font-family: var(--var-FontMain);
     font-size: 12pt;
 }
+
+.options-entrega{
+    margin-top: 30px;
+}
