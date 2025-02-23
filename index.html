@@ -25,5 +25,68 @@
             </section>
         </section>
     </header>
+
+
+    <section class="section-main">
+        <section class="master-container-forms">
+            <header>
+                <h1>Confirme sua compra</h1>
+            </header>
+
+            <div class="controler-typeof-delivery">
+                <header>
+                    <span class="title-section-form">
+                        Entrega
+                    </span>
+                    <br>
+                    <input type="checkbox" id="entrega_olx" name="entrega_grupo" value="olx" checked>
+                    <label for="entrega_olx">Quero entrega pela OLX</label>
+
+                    <input type="checkbox" id="retirar" name="entrega_grupo" value="retirar">
+                    <label for="retirar">Quero retirar com o vendedor (a combinar no chat com vendedor)</label>
+                </header>
+
+                <section class="container-main-form">
+                    <section class="part-form">
+                        <span class="title-section-form">
+                            Endereço de entrega
+                        </span>
+                        <button type="button">
+
+                        </button>
+                    </section>
+                </section>
+
+
+
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const checkboxes = document.querySelectorAll('input[name="entrega_grupo"]');
+
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener("change", function () {
+                                if (this.checked) {
+                                    checkboxes.forEach(cb => {
+                                        if (cb !== this) cb.checked = false;
+                                    });
+                                } else {
+                                    // Impede que todos fiquem desmarcados
+                                    if (![...checkboxes].some(cb => cb.checked)) {
+                                        this.checked = true;
+                                    }
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </div>
+
+            <form action="">
+
+            </form>
+        </section>
+    </section>
 </body>
 </html>
