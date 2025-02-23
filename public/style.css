@@ -115,7 +115,7 @@
 }
 .title-section-form{
     font-family: var(--var-FontMain);
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 700;
     color: var(--var-colorTitlesForm);
 }
@@ -159,4 +159,59 @@ input[type="checkbox"]:checked + label::before {
     width: 15px;
     background-color: var(--var-purpleLogo);
     box-shadow: inset 0 0 0 2px white; /* Cria um espaçamento branco interno */
+}
+.container-info-end{
+    margin-top: 20px;
+}
+
+.container-select-end{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: calc(100% - 40px);
+    height: 80px;
+    padding: 0px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--var-colorBoder);
+    cursor: pointer;
+}
+.container-select-end:hover{
+    background-color: rgb(242, 242, 242);
+}
+.actived-end{
+    display: flex;
+    transition: 0.2s;
+}
+
+.buttonAddEndereço{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.buttonAddEndereço div{
+    background-color: #49078f28;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+
+}
+.buttonAddEndereço div img{
+    height: 20px;
+    width: auto;
+}
+.buttonAddEndereço p{
+    font-family: var(--var-FontMain);
+    font-size: 12pt;
 }
