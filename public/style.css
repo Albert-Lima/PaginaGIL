@@ -1,0 +1,77 @@
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --var-paddingHeader: 20px;
+    --var-colorBoder: #CFD4DD;
+    --var-FontMain: "Open Sans", serif;
+    --var-FontDetailed: "Montserrat", serif;
+    --var-borderMain: 1px solid var(--var-colorBoder);
+}
+.header-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    top: 0px;
+    border-bottom: var(--var-borderMain);
+    background-color: transparent;
+}
+.header-page-container{
+    width: 100%;
+    max-width: 85%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--var-paddingHeader);
+}
+.logo img{
+    width: auto;
+    height: 30px;
+}
+
+
+.user-section-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 20px;
+    border: 1px solid rgb(116, 116, 116);
+    border-radius: 30px;
+    gap: 5px
+}
+.user-section-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.user-IMG{
+    border-radius: 100%;
+    height: 30px;
+}
+
+.user-section-container span{
+    font-family: var(--var-FontDetailed);
+    font-size: 11pt;
+}
+
+@media (max-width: 750px) {
+    .user-section-container{
+        border: none;
+    }
+    .user-section-container span{
+        display: none;
+    }
+}
