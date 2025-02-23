@@ -71,56 +71,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="part-form  options-entrega">
-                        <span class="title-section-form">
-                            Opções de entrega
-                        </span>
-                        <div id="container-entrega-produto">
-                            <input type="checkbox" id="entrega_padrao" name="entrega_grupo" value="olx" checked>
-                            <span>
-                                <h2 class="desc-entrega">Padrão</h2>
-                                <p class="info-entrega">Até X dias úteis</p>
-                            </span>
-
-                            <span class="info-value-entrega">frete grátis</span>
-                        </div>
-
-                        <div id="container-entrega-produto">
-                            <input type="checkbox" id="expressa" name="entrega_grupo" value="retirar">
-                            <span>
-                                <h2 class="desc-entrega">Expressa</h2>
-                                <p class="info-entrega">Até X dias úteis</p>
-                            </span>
-
-                            <span class="info-value-entrega with-payment">R$ 39,90</span>
-                        </div>
-                    </section>
                 </section>
-
-
-
-
-                <!--controle checkboxes-->
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const checkboxes = document.querySelectorAll('input[name="entrega_grupo"]');
-
-                        checkboxes.forEach(checkbox => {
-                            checkbox.addEventListener("change", function () {
-                                if (this.checked) {
-                                    checkboxes.forEach(cb => {
-                                        if (cb !== this) cb.checked = false;
-                                    });
-                                } else {
-                                    // Impede que todos fiquem desmarcados
-                                    if (![...checkboxes].some(cb => cb.checked)) {
-                                        this.checked = true;
-                                    }
-                                }
-                            });
-                        });
-                    });
-                </script>
             </div>
 
             <form action="">
